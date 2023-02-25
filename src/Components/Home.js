@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react'
 import { Waypoint } from 'react-waypoint';
 import whyuse from "../assets/img/why-us.png"
-import style from'../assets/css/style.css'
+import '../assets/css/style.css'
 import '../assets/vendor/aos/aos.css'
 import '../assets/vendor/swiper/swiper-bundle.min.css'
 import '../assets/vendor/remixicon/remixicon.css'
@@ -25,6 +25,7 @@ import Timeline from './Timeline';
 import Testimonals from './Testimonals';
 // import GLightbox from "glightbox"
 import AOS from "aos"
+import TinySlider from './TinySlider';
 const Home = () => {
     
 useEffect(() => {
@@ -369,12 +370,13 @@ useEffect(() => {
       </div>
     </section>
     
-    <section id="clients" class="clients section-bg">
+    <section id="clients" class="clients section-bg spons">
       <div class="container" >
       <div class="section-title">
           <h2>Sponsors</h2>
         </div>
-        <div class="row" data-aos="zoom-in">
+        <TinySlider>
+        <div class="row spons-slider" data-aos="zoom-in">
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
             <img src={client1} class="img-fluid" alt=""/>
@@ -401,7 +403,7 @@ useEffect(() => {
           </div>
 
         </div>
-
+        </TinySlider>
       </div>
     </section>
      <section>

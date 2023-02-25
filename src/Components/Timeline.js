@@ -1,4 +1,4 @@
-import '../style/main.css';
+// import '../style/main.css';
 import TinySlider from './TinySlider';
 import Aos from "aos"
 import { useEffect } from "react";

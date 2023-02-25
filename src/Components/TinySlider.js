@@ -10,7 +10,6 @@ const TinySlider = ({ children, listRef }) => {
       setSlider(
         tns({
             container: '.road-map-slider',
-            items: 1,
             slideBy: 'page',
             autoplay: false,
             mouseDrag: true,
@@ -22,7 +21,34 @@ const TinySlider = ({ children, listRef }) => {
                     items: 2,
                 },
                 540: { 
-                    items: 3,
+                    items: 4,
+                },
+                768: {
+                    items: 4,
+                },
+                992: {
+                    items: 4,
+                },
+                1170: {
+                    items: 4,
+                }
+            }
+        },
+        {
+            container: '.spons-slider',
+            items: 2,
+            slideBy: 'page',
+            autoplay: false,
+            mouseDrag: true,
+            gutter: 0,
+            nav: true,
+            controls: false,
+            responsive: {
+                0: {
+                    items: 4,
+                },
+                540: { 
+                    items: 4,
                 },
                 768: {
                     items: 4,
