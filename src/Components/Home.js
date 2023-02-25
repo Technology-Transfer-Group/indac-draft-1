@@ -21,7 +21,8 @@ import team3 from "../assets/img/team/team-3.jpg"
 import team2 from "../assets/img/team/team-2.jpg"
 import team1 from "../assets/img/team/team-1.jpg"
 import skills from "../assets/img/skills.png"
-
+import Timeline from './Timeline';
+import Testimonals from './Testimonals';
 // import GLightbox from "glightbox"
 import AOS from "aos"
 const Home = () => {
@@ -336,43 +337,6 @@ useEffect(() => {
   </section>
 
   <main id="main">
-
-    
-    <section id="clients" class="clients section-bg">
-      <div class="container">
-
-        <div class="row" data-aos="zoom-in">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src={client1} class="img-fluid" alt=""/>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src={client2} class="img-fluid" alt=""/>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src={client3} class="img-fluid" alt=""/>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src={client4} class="img-fluid" alt=""/>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src={client5} class="img-fluid" alt=""/>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src={client6} class="img-fluid" alt=""/>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
@@ -404,9 +368,49 @@ useEffect(() => {
 
       </div>
     </section>
+    
+    <section id="clients" class="clients section-bg">
+      <div class="container" >
+      <div class="section-title">
+          <h2>Sponsors</h2>
+        </div>
+        <div class="row" data-aos="zoom-in">
 
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src={client1} class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src={client2} class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src={client3} class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src={client4} class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src={client5} class="img-fluid" alt=""/>
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src={client6} class="img-fluid" alt=""/>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+     <section>
+      <div>
+        <Timeline/>
+      </div>
+     </section>
    
-    <section id="why-us" class="why-us section-bg">
+    {/* <section id="why-us" class="why-us section-bg">
       <div class="container-fluid" data-aos="fade-up">
 
         <div class="row">
@@ -583,10 +587,10 @@ useEffect(() => {
         </div>
 
       </div>
-    </section>
+    </section> */}
 
 
-    <section id="team" class="team section-bg">
+    {/* <section id="team" class="team section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -669,7 +673,12 @@ useEffect(() => {
       </div>
     </section>
 
-    
+     */}
+      <section>
+      <div>
+        <Testimonals/>
+      </div>
+     </section>
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
@@ -738,7 +747,7 @@ useEffect(() => {
 
       </div>
     </section>
-
+   
   </main>
 
   
