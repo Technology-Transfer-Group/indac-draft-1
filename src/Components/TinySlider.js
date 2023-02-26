@@ -16,78 +16,80 @@ const TinySlider = ({ children, listRef }) => {
             gutter: 0,
             nav: true,
             controls: false,
+            items:2,
             responsive: {
-                0: {
-                    items: 2,
-                },
-                540: { 
-                    items: 4,
-                },
-                768: {
-                    items: 4,
-                },
-                992: {
-                    items: 4,
-                },
-                1170: {
-                    items: 4,
-                }
-            }
-        },
-        {
-            container: '.spons-slider',
-            items: 2,
-            slideBy: 'page',
-            autoplay: false,
-            mouseDrag: true,
-            gutter: 0,
-            nav: true,
-            controls: false,
-            responsive: {
-                0: {
-                    items: 4,
-                },
-                540: { 
-                    items: 4,
-                },
-                768: {
-                    items: 4,
-                },
-                992: {
-                    items: 4,
-                },
-                1170: {
-                    items: 4,
-                }
-            }
-        },
-        {
-          container: '.testimonial-slider',
-            items: 3,
-            slideBy: 'page',
-            autoplay: false,
-            mouseDrag: true,
-            gutter: 0,
-            nav: true,
-            controls: false,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                540: {
-                    items: 1,
-                },
-                768: {
-                    items: 2,
-                },
-                992: {
-                    items: 2,
-                },
-                1170: {
-                    items: 3,
-                }
-            }
-        })
+                        0: {
+                            items: 2,
+                        },
+                        540: { 
+                            items: 3,
+                        },
+                        768: {
+                            items: 4,
+                        },
+                        992: {
+                            items: 4,
+                        },
+                        1170: {
+                            items: 4,
+                        }
+                    }
+        }
+        // {
+        //     container: '.spons-slider',
+        //     items: 2,
+        //     slideBy: 'page',
+        //     autoplay: false,
+        //     mouseDrag: true,
+        //     gutter: 0,
+        //     nav: true,
+        //     controls: false,
+        //     responsive: {
+        //         0: {
+        //             items: 4,
+        //         },
+        //         540: { 
+        //             items: 4,
+        //         },
+        //         768: {
+        //             items: 4,
+        //         },
+        //         992: {
+        //             items: 4,
+        //         },
+        //         1170: {
+        //             items: 4,
+        //         }
+        //     }
+        // },
+        // {
+        //   container: '.testimonial-slider',
+        //     items: 3,
+        //     slideBy: 'page',
+        //     autoplay: false,
+        //     mouseDrag: true,
+        //     gutter: 0,
+        //     nav: true,
+        //     controls: false,
+        //     responsive: {
+        //         0: {
+        //             items: 1,
+        //         },
+        //         540: {
+        //             items: 1,
+        //         },
+        //         768: {
+        //             items: 2,
+        //         },
+        //         992: {
+        //             items: 2,
+        //         },
+        //         1170: {
+        //             items: 3,
+        //         }
+        //     }
+        // }
+        )
       );
     }
   }, [slider, listRef]);

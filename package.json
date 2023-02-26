@@ -16,6 +16,7 @@
     "react-waypoint": "^10.3.0",
     "swiper": "^9.0.5",
     "tiny-slider": "^2.9.4",
+    "tiny-slider-react": "^0.5.6",
     "validate": "^5.2.0",
     "waypoint": "^0.2.8",
     "web-vitals": "^2.1.4"

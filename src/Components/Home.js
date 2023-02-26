@@ -10,22 +10,18 @@ import '../assets/vendor/boxicons/css/boxicons.min.css'
 import '../assets/vendor/bootstrap-icons/bootstrap-icons.css'
 import '../assets/vendor/bootstrap/css/bootstrap.min.css'
 import heroimg from "../assets/img/hero-img.png"
-import client1 from "../assets/img/clients/client-1.png"
-import client2 from "../assets/img/clients/client-2.png"
-import client3 from "../assets/img/clients/client-3.png"
-import client4 from "../assets/img/clients/client-4.png"
-import client5 from "../assets/img/clients/client-5.png"
-import client6 from "../assets/img/clients/client-6.png"
+
 import team4 from "../assets/img/team/team-4.jpg"
 import team3 from "../assets/img/team/team-3.jpg"
 import team2 from "../assets/img/team/team-2.jpg"
 import team1 from "../assets/img/team/team-1.jpg"
 import skills from "../assets/img/skills.png"
 import Timeline from './Timeline';
-import Testimonals from './Testimonals';
+// import Testimonals from './Testimonals';
 // import GLightbox from "glightbox"
 import AOS from "aos"
 import TinySlider from './TinySlider';
+import Sponsors from './Sponsors';
 const Home = () => {
     
 useEffect(() => {
@@ -370,42 +366,7 @@ useEffect(() => {
       </div>
     </section>
     
-    <section id="clients" class="clients section-bg spons">
-      <div class="container" >
-      <div class="section-title">
-          <h2>Sponsors</h2>
-        </div>
-        <TinySlider>
-        <div class="row spons-slider" data-aos="zoom-in">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src={client1} class="img-fluid" alt=""/>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src={client2} class="img-fluid" alt=""/>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src={client3} class="img-fluid" alt=""/>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src={client4} class="img-fluid" alt=""/>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src={client5} class="img-fluid" alt=""/>
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src={client6} class="img-fluid" alt=""/>
-          </div>
-
-        </div>
-        </TinySlider>
-      </div>
-    </section>
+   <Sponsors/>
      <section>
       <div>
         <Timeline/>
@@ -678,7 +639,7 @@ useEffect(() => {
      */}
       <section>
       <div>
-        <Testimonals/>
+        {/* <Testimonals/> */}
       </div>
      </section>
     <section id="contact" class="contact">
