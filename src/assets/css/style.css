@@ -2051,3 +2051,134 @@ section {
   width: 25px;
   background-color: #3e80ff
 }
+
+.testimonial .tns-nav {
+  text-align: center;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
+  /* height: 148px; */
+  left: 50%;
+  z-index: 14;
+  -webkit-transform: translate(-50%,0);
+  transform: translate(-50%, 0);
+}
+
+.testimonial .tns-nav button {
+  height: 6px;
+  width: 14px;
+  background-color: #24126a;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  margin: 0 5px;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease
+}
+
+.testimonial .tns-nav button:hover {
+  background-color: #3e80ff
+}
+
+.testimonial .tns-nav button.tns-nav-active {
+  width: 25px;
+  background-color: #3e80ff
+}
+.testimonial-collection{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.modal_container{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+.modalbox.active{
+  z-index: 100;
+}
+.modalbox .btn {
+  min-width: 130px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 15px 40px;
+  background-color: #010101;
+  border: 2px solid #010101;
+  border-radius: 6px;
+  color: #fff;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+.modalbox.btn:hover {
+  background-color: #4169e1;
+}
+.modalbox.active .btn-modal {
+  display: none;
+}
+.modalbox .overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  opacity: 0;
+}
+.modalbox .modal__box {
+  position: absolute;
+  transform: scale(0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px 40px;
+  background-color: #fefefe;
+  border-radius: 16px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.modalbox .modal__title,
+.modalbox .modal__text {
+  margin-bottom: 20px;
+}
+.modalbox.active .overlay,
+.modalbox.active .modal__box {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modalbox.active .modal__box {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.modalbox .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.modalbox .closebtnpic{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  height: 30px;
+  width: 30px;
+}
