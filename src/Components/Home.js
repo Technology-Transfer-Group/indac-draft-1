@@ -1,4 +1,4 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import { Waypoint } from 'react-waypoint';
 import whyuse from "../assets/img/why-us.png"
 import '../assets/css/style.css'
@@ -22,8 +22,15 @@ import Timeline from './Timeline';
 import AOS from "aos"
 import TinySlider from './TinySlider';
 import Sponsors from './Sponsors';
+import Modal from './Modal';
 const Home = () => {
-    
+  const [title, setTitle] = useState("")
+  const [p1, setp1] = useState("")
+  const [p2, setp2] = useState("")
+  const [buttonname1, setbuttonname1] = useState("")
+  const [buttonname2, setbuttonname2] = useState("")
+  const [button1, setbutton1] = useState()
+  const [button2, setbutton2] = useState()
 useEffect(() => {
     const select = (el, all = false) => {
         el = el.trim()
@@ -274,6 +281,8 @@ useEffect(() => {
 }, [])
   return (
     <div>
+      <div className="modalbox" ><Modal title={title} p1=
+      {p1} p2={p2} button1={button1} button2={button2} buttonname1={buttonname1} buttonname2={buttonname2} /></div>
         <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
@@ -369,7 +378,7 @@ useEffect(() => {
    <Sponsors/>
      <section>
       <div>
-        <Timeline/>
+        <Timeline setTitle={setTitle} setp1={setp1} setp2={setp2} setbutton1={setbutton1} setbutton2={setbutton2} setbuttonname1={setbuttonname1} setbuttonname2={setbuttonname2}/>
       </div>
      </section>
    
