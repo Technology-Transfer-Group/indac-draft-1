@@ -18,6 +18,7 @@ import team1 from "../assets/img/team/team-1.jpg"
 import skills from "../assets/img/skills.png"
 import Timeline from './Timeline';
 // import Testimonals from './Testimonals';
+import Testimonials from './Testimonials';
 // import GLightbox from "glightbox"
 import AOS from "aos"
 import TinySlider from './TinySlider';
@@ -365,8 +366,9 @@ useEffect(() => {
 
       </div>
     </section>
-    
+    <div>
    <Sponsors/>
+    </div>
      <section>
       <div>
         <Timeline/>
@@ -639,7 +641,7 @@ useEffect(() => {
      */}
       <section>
       <div>
-        {/* <Testimonals/> */}
+        <Testimonials/>
       </div>
      </section>
     <section id="contact" class="contact">

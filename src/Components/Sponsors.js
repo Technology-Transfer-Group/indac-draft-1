@@ -40,7 +40,7 @@ const Sponsors = () => {
     
   return (
     <section id="clients" class="clients section-bg spons">
-    <div class="container" >
+    <div class="container">
     <div class="section-title">
         <h2>Sponsors</h2>
       </div>

@@ -37,7 +37,7 @@ const Timeline = () => {
     //         }
     //     }
     // });
-
+   
     return (
         <section className="road-map section" style={{backgroundImage:"url(" + "/images/road-map/bg.png" + ")"}}>
             <div className="container">
