@@ -5,7 +5,7 @@ import { Route, Routes } from 'react-router-dom';
 import SponsorsPage from './Components/SponsorsPage';
 import { useEffect, useState } from 'react';
 import Modal from './Components/Modal';
-
+import TeamAndContact from './Components/TeamAndContact'
 function App() {
   const [title, setTitle] = useState("")
   const [p1, setp1] = useState("")
@@ -211,6 +211,7 @@ function App() {
   <Routes>
     <Route exact path='/' element={<Home setTitle={setTitle} setp1={setp1} setp2={setp2} setbutton1={setbutton1} setbutton2={setbutton2} setbuttonname1={setbuttonname1} setbuttonname2={setbuttonname2}/>} />
     <Route exact path='/spons' element={<SponsorsPage setTitle={setTitle} setp1={setp1} setp2={setp2} setbutton1={setbutton1} setbutton2={setbutton2} setbuttonname1={setbuttonname1} setbuttonname2={setbuttonname2}/>} />
+    <Route exact path='/teams' element={< TeamAndContact/>}/>
     </Routes>      
     </div>
   );
