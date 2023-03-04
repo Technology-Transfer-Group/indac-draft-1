@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Components/Home';
 import { Route, Routes } from 'react-router-dom';
 import SponsorsPage from './Components/SponsorsPage';
+import IndustryPage from './Components/IndustryPage';
 import { useEffect, useState } from 'react';
 import Modal from './Components/Modal';
 import TeamAndContact from './Components/TeamAndContact'
@@ -180,7 +181,7 @@ function App() {
           <li><a class="nav-link scrollto" href="/#testimonials">Testimonials</a></li>
           <li><a class="nav-link   scrollto" href="/spons">Sponsors</a></li>
           <li><a class="nav-link scrollto" href="/teams">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Industry</span> </a>
+          <li class="dropdown"><a href="/industry"><span>Industry</span> </a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -213,6 +214,8 @@ function App() {
     <Route exact path='/' element={<Home setTitle={setTitle} setp1={setp1} setp2={setp2} setbutton1={setbutton1} setbutton2={setbutton2} setbuttonname1={setbuttonname1} setbuttonname2={setbuttonname2}/>} />
     <Route exact path='/spons' element={<SponsorsPage setTitle={setTitle} setp1={setp1} setp2={setp2} setbutton1={setbutton1} setbutton2={setbutton2} setbuttonname1={setbuttonname1} setbuttonname2={setbuttonname2}/>} />
     <Route exact path='/teams' element={< TeamAndContact/>}/>
+    <Route exact path='/industry' element={<IndustryPage setTitle={setTitle} setp1={setp1} setp2={setp2} setbutton1={setbutton1} setbutton2={setbutton2} setbuttonname1={setbuttonname1} setbuttonname2={setbuttonname2}/>} />
+
     </Routes>      
     </div>
   );
