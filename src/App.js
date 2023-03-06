@@ -215,7 +215,7 @@ function App() {
             </ul>
           </li>
           {/* <li><Link class="nav-link scrollto" to="#contact">Contact</Link></li> */}
-          <li><Link class="getstarted scrollto" to="/#about">Get Started</Link></li>
+          <li><Link class="getstarted scrollto" to="/patent">Patents</Link></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
