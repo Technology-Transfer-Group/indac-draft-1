@@ -27,7 +27,7 @@
 } */
 
 
-/* body {
+/* .team {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -36,18 +36,18 @@
   flex-direction: column;
   padding: 2em;
 } */
-body::-webkit-scrollbar {
+.team::-webkit-scrollbar {
   background: #020202;
   width: 10px;
 }
-body::-webkit-scrollbar-track {
+.team::-webkit-scrollbar-track {
   background: #020202;
 }
-body::-webkit-scrollbar-thumb {
+.team::-webkit-scrollbar-thumb {
   background: #ffffff;
   border-radius: 1px;
 }
-body::before {
+.team::before {
   content: "";
   position: absolute;
   top: 0;
@@ -57,7 +57,7 @@ body::before {
   /* background: linear-gradient(#f00, #f0f); */
   clip-path: circle(30% at right 70%);
 }
-body::after {
+.team::after {
   content: "";
   position: absolute;
   top: 0;
@@ -67,7 +67,7 @@ body::after {
   /* background: linear-gradient(#2196f3, #e91e63); */
   clip-path: circle(20% at 10% 10%);
 }
-body .container {
+.team .container {
   position: relative;
   z-index: 1;
   display: flex;
@@ -77,8 +77,8 @@ body .container {
   flex-wrap: wrap;
   padding: 1em;
 }
-/* body  */
-body .team .heading{
+/* .team  */
+.team .heading{
   padding-top: 72px;
   background-color: #37517e;
   text-transform: uppercase;
@@ -88,7 +88,7 @@ body .team .heading{
   color: whitesmoke;
   width:100%;
 }
-body .contactUs{
+.team .contactUs{
   padding-top: 72px;
   background-color: #37517e;
   text-transform: uppercase;
@@ -98,7 +98,7 @@ body .contactUs{
   color: whitesmoke;
   
 }
-body .container .card {
+.team .container .card {
   position: relative;
   width: 300px;
   height: 400px;
@@ -116,7 +116,7 @@ body .container .card {
   /* box-shadow: 0px 10px 10px rgba(46, 54, 68, 0.03); */
 }
 
-body .container .card .content {
+.team .container .card .content {
   position: relative;
   /* margin-top: 20px?; */
   display: flex;
@@ -126,7 +126,7 @@ body .container .card .content {
   opacity: 0.5;
   transition: 0.5s;
 }
-body .container .card .content .img {
+.team .container .card .content .img {
   position: relative;
   width: 150px;
   height: 150px;
@@ -134,7 +134,7 @@ body .container .card .content .img {
   overflow: hidden;
   /* border: 10px solid rgba(0, 0, 0, 0.25); */
 }
-body .container .card .content .img img {
+.team .container .card .content .img img {
   position: absolute;
   top: 0;
   left: 0;
@@ -142,7 +142,7 @@ body .container .card .content .img img {
   height: 100%;
   object-fit: cover;
 }
-body .container .card .content .cardContent h3 {
+.team .container .card .content .cardContent h3 {
   color: black;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -152,34 +152,35 @@ body .container .card .content .cardContent h3 {
   margin: 20px 0 10px;
   line-height: 1.1em;
 }
-body .container .card .content .cardContent h3 span {
+.team .container .card .content .cardContent h3 span {
   font-size: 12px;
   font-weight: 300;
   text-transform: initial;
 }
-body .container .card .sci {
+.team .container .card .sci {
   position: absolute;
   bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  padding: 0;
 }
-body .container .card .sci li {
+.team .container .card .sci li {
   margin: 0 10px;
   transform: translateY(40px);
   opacity: 0;
   transition: 0.5s;
   transition-delay: calc(0.1s * var(--i));
 }
-body .container .card .sci li a {
+.team .container .card .sci li a {
   font-size: 24px;
 }
-body .container .card:hover .content {
+.team .container .card:hover .content {
   opacity: 1;
   transform: translateY(-20px);
 }
-body .container .card:hover .sci li {
+.team .container .card:hover .sci li {
   transform: translateY(0px);
   opacity: 1;
 }
