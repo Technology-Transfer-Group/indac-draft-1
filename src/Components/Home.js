@@ -23,6 +23,7 @@ import AOS from "aos"
 import TinySlider from './TinySlider';
 import Sponsors from './Sponsors';
 import Modal from './Modal';
+import emailjs from '@emailjs/browser';
 const Home = ({setTitle ,setbutton1 ,setbutton2 ,setbuttonname1, setbuttonname2 ,setp1 ,setp2}) => {
  
 useEffect(() => {
@@ -505,9 +506,8 @@ useEffect(() => {
 
             <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
               <form
-                action="forms/contact.php"
-                method="post"
-                role="form"
+                             
+                id="#form1"   
                 class="php-email-form"
               >
                 <div class="row">
@@ -543,10 +543,11 @@ useEffect(() => {
                   />
                 </div>
                 <div class="form-group">
-                  <label for="name">Message</label>
+                  <label for="message">Message</label>
                   <textarea
                     class="form-control"
                     name="message"
+                    id='message'
                     rows="10"
                     required
                   ></textarea>
@@ -559,7 +560,20 @@ useEffect(() => {
                   </div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Send Message</button>
+                  <button onClick={(event)=>{
+event.preventDefault()
+const email = document.getElementById("email").value
+const message = document.getElementById("message").value
+const name = document.getElementById("name").value
+const subject = document.getElementById("subject").value
+ emailjs.send('service_5smn36b_indac', 'template_sxk3fo7',{email,message,name,subject} , 'AhdTDXhHm-YPh6qPL')
+ .then((result) => {
+   console.log(result.text);
+ }, (error) => {
+   console.log(error.text);
+ });
+                  }} 
+                  >Send Message</button>
                 </div>
               </form>
             </div>
