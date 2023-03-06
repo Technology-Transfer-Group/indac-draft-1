@@ -7,6 +7,7 @@ import IndustryPage from './Components/IndustryPage';
 import { useEffect, useState } from 'react';
 import Modal from './Components/Modal';
 import TeamAndContact from './Components/TeamAndContact'
+import Patent from './Components/Patent';
 function App() {
   const [title, setTitle] = useState("")
   const [p1, setp1] = useState("")
@@ -214,6 +215,7 @@ function App() {
     <Route exact path='/' element={<Home setTitle={setTitle} setp1={setp1} setp2={setp2} setbutton1={setbutton1} setbutton2={setbutton2} setbuttonname1={setbuttonname1} setbuttonname2={setbuttonname2}/>} />
     <Route exact path='/spons' element={<SponsorsPage setTitle={setTitle} setp1={setp1} setp2={setp2} setbutton1={setbutton1} setbutton2={setbutton2} setbuttonname1={setbuttonname1} setbuttonname2={setbuttonname2}/>} />
     <Route exact path='/teams' element={< TeamAndContact/>}/>
+    <Route exact path='/patent' element={< Patent/>}/>
     <Route exact path='/industry' element={<IndustryPage setTitle={setTitle} setp1={setp1} setp2={setp2} setbutton1={setbutton1} setbutton2={setbutton2} setbuttonname1={setbuttonname1} setbuttonname2={setbuttonname2}/>} />
 
     </Routes>      

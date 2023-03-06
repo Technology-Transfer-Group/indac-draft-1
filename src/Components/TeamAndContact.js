@@ -257,8 +257,6 @@ function TeamAndContact() {
           </div>
         </div>
       </div>
-      {/* <div className="contactUs">CONTACT US</div> */}
-     
     </div>
   );
 }
