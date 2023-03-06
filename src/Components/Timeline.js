@@ -110,7 +110,7 @@ const Timeline = ({setTitle ,setbutton1 ,setbutton2 ,setbuttonname1, setbuttonna
                                     <div className="single-map down">
                                         <span className="arrow"></span>
                                         <h3>First Week of February
-                                            <span>TED<sr>x</sr>IITKharagpur</span>
+                                            <span>TEDxIITKharagpur</span>
                                         </h3>
                                     </div>
 
